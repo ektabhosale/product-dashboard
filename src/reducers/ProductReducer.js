@@ -1,0 +1,68 @@
+import {
+  CREATE_PRODUCT,
+  GET_PRODUCT,
+  UPDATE_PRODUCT,
+  DELETE_PRODUCT,
+  SELECT_PRODUCT,
+  CLEAR_PRODUCT,
+  DELETE_SELECTED_PRODUCT,
+} from "../constant/types";
+import {intialState} from "../db/product" 
+// const intialState = {
+//   products: [
+//     {
+//       id:1,
+//       name: "Micromax A57",
+//       pricingTier: "budget",
+//       priceRange: "5k-8k",
+//       weight: 200, // In grams,
+//       availability: 100,
+//       productUrl: "https://e...content-available-to-author-only...e.com/mma57",
+//       isEditable: true
+//     },
+//     {
+//       id:2,
+//       name: "OnePlus 6T",
+//       pricingTier: "premier",
+//       priceRange: "35k-45k",
+//       weight: 200, // In grams
+//       availability: 30,
+//       productUrl: "https://e...content-available-to-author-only...e.com/op6t",
+//       isEditable: true
+//     },
+//     {
+//       id:3,
+//       name: "Redmi Ultra",
+//       pricingTier: "budget",
+//       priceRange: "8k-11k",
+//       weight: 150, // In grams
+//       availability: 50,
+//       productUrl: "https://e...content-available-to-author-only...e.com/redmiu",
+//       isEditable: true
+//     }
+//   ]
+
+// }
+
+export const productReducer = (state = intialState, action) => {
+  switch (action.type) {
+    case UPDATE_PRODUCT:
+      return {
+        products: [action.payload, ...state.products]
+      }
+      case GET_PRODUCT:
+        let arr = state.products.filter(
+          (product) => product.name == action.payload
+        );
+        arr = arr.values();
+        for (let val of arr) {
+          arr = val;
+        }
+        return {
+          ...state,
+          product: arr,
+        };
+    default:
+      return state;
+  }
+};
