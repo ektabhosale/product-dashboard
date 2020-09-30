@@ -16,7 +16,7 @@ export const intialState = {
       pricingTier: "premier",
       priceRange: "35k-45k",
       weight: 200, // In grams
-      availability: 30,
+      availability: 130,
       productUrl: "https://e...content-available-to-author-only...e.com/op6t",
       isEditable: false
     },
@@ -26,37 +26,37 @@ export const intialState = {
       pricingTier: "budget",
       priceRange: "8k-11k",
       weight: 150, // In grams
-      availability: 50,
+      availability: 250,
       productUrl: "https://e...content-available-to-author-only...e.com/redmiu",
       isEditable: true
     },
     {
       id:4,
-      name: "Redmi Ultra",
+      name: "Lenovo 31N",
       pricingTier: "budget",
       priceRange: "8k-11k",
-      weight: 150, // In grams
-      availability: 50,
+      weight: 200, // In grams
+      availability: 120,
       productUrl: "https://e...content-available-to-author-only...e.com/redmiu",
-      isEditable: true
+      isEditable: false
     },
     {
       id:5,
-      name: "Redmi Ultra",
+      name: "OPPO F11",
       pricingTier: "budget",
       priceRange: "8k-11k",
-      weight: 150, // In grams
-      availability: 50,
+      weight: 250, // In grams
+      availability: 150,
       productUrl: "https://e...content-available-to-author-only...e.com/redmiu",
       isEditable: true
     },
     {
       id:6,
-      name: "Redmi Ultra",
+      name: "Redmi HG 8",
       pricingTier: "budget",
       priceRange: "8k-11k",
-      weight: 150, // In grams
-      availability: 50,
+      weight: 200, // In grams
+      availability: 100,
       productUrl: "https://e...content-available-to-author-only...e.com/redmiu",
       isEditable: true
     }

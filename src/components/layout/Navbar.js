@@ -6,7 +6,7 @@ const TopNav = () => {
     <nav className="navbar shadow fixed-top navbar-expand-sm navbar-dark bg-primary">
       <div className="container ">
       
-        <Link to="/" className="navbar-brand mx-auto font-weight-bold">
+        <Link to="/" className="navbar-brand mx-auto font-weight-bold brand">
         {/* <i class="fa fa-mobile" ></i> */}
          Product Dashboard
         </Link>

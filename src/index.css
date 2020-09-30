@@ -29,6 +29,22 @@ input[type=checkbox]
 
 form .title{ 
   text-align: right;
+  font-family: 'Merriweather', serif;
+}
+
+
+.card-header{
+  font-size: 25px;
+  font-family: 'Merriweather', serif;
+}
+input[type="radio"] {
+  margin-left: 20px;
+  padding-left: 0%;
   
+}
+input[type=checkbox] { height: 25px;; }
+.brand{
+  font-size: 30px;
+  font-family: 'Merriweather', serif;
 }
 
